@@ -1,37 +1,415 @@
-## Welcome to GitHub Pages
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
 
-You can use the [editor on GitHub](https://github.com/mauricioruizintellect/Chat/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+      Thanks,
+      @jlantunez.
+    -->
 
-### Markdown
+    <!-- SEO -->
+    <title>GitHub Pages - Ejemplos de uso</title>
+    <meta name="description" content="Presentación para explicar los casos de uso de GitHub Pages que estoy probando">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/"> -->
 
-```markdown
-Syntax highlighted code block
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
 
-# Header 1
-## Header 2
-### Header 3
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/base.css">
 
-- Bulleted
-- List
+    <!-- CSS Colors -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/colors.css">
 
-1. Numbered
-2. List
+    <!-- Style changed for current presentation -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/presentation.css">
 
-**Bold** and _Italic_ and `Code` text
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
 
-[Link](url) and ![Image](src)
-```
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cristinafsanz">
+    <!-- EDIT -->
+    <meta name="twitter:creator" content="@cristinafsanz">
+    <!-- EDIT -->
+    <meta name="twitter:title" content="Cristina Fernández Sanz">
+    <!-- EDIT -->
+    <meta name="twitter:description" content="Desarrolladora front-end.">
+    <!-- EDIT -->
 
-### Jekyll Themes
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mauricioruizintellect/Chat/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
 
-### Support or Contact
+</head>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<body>
+    <header role="banner">
+        <nav role="navigation">
+            <p class="logo"><a href="index.html" title="GitHub Pages">Ilusionismo con GitHub Pages - Ejemplos de uso</a></p>
+            <ul>
+                <li class="github">
+                    <a rel="external" href="https://github.com/cristinafsanz" title="Github">
+                        <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+                        <em>cristinafsanz</em>
+                    </a>
+                </li>
+                <li class="twitter">
+                    <a rel="external" href="https://twitter.com/cristinafsanz" title="Twitter">
+                        <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+                        <em>@cristinafsanz</em>
+                    </a>
+                </li>
+                <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <article id="webslides">
+            <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+            <section class="aligncenter">
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap size-80">
+                    <h1 class="text-data">
+                        <a class="visible-link" href="https://github.com/cristinafsanz/github-pages">Ilusionismo con GitHub Pages</a>
+                    </h1>
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <section class="aligncenter">
+                <div class="wrap">
+                    <div class="card-40 bg-white">
+                        <figure>
+                            <img src="static/images/avatar.png">
+                        </figure>
+                        <div class="flex-content">
+                            <h2 class="presentation">Cristina Fernández</h2>
+                            <p>
+                                <a href="http://cristinafsanz.github.io/projects/">
+                                    Desarrolladora front-end
+                                </a>
+                            </p>
+                            <ul class="description">
+                                <li>
+                                    <a class="visible-link" rel="external" href="https://twitter.com/cristinafsanz" title="Twitter">
+                                        <svg class="fa-twitter">
+                                            <use xlink:href="#fa-twitter"></use>
+                                        </svg>
+                                        <em>@cristinafsanz</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="visible-link" rel="external" href="https://github.com/cristinafsanz" title="GitHub">
+                                        <svg class="fa-github">
+                                            <use xlink:href="#fa-github"></use>
+                                        </svg>
+                                        <em>cristinafsanz</em>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="aligncenter">
+                <h2>
+                    <a href="https://www.awwwards.com">awwwards.com</a>
+                </h2>
+                <img src="static/images/awwwards.jpg" alt="Ejemplos páginas web en www.awwwards.com">
+            </section>
+
+            <section class="aligncenter">
+                <div class="wrap">
+                    <h2>
+                        Presentación Cinematógrafo (1895)
+                    </h2>
+                    <img class="img-70" src="static/images/llegada-tren-estacion-Ciotat.gif">
+                </div>
+            </section>
+
+            <section class="aligncenter">
+                <div class="wrap">
+                    <h2>
+                        Mi GitHub (2016)
+                    </h2>
+                    <img src="static/images/github-cristinafsanz.jpg">
+                </div>
+            </section>
+
+            <section class="aligncenter">
+                <div class="wrap">
+                    <h2>
+                        Git, GitHub y GitHub Pages
+                    </h2>
+                    <div class="flexblock gallery">
+                        <li>
+                            <img src="static/images/subir-github.gif" alt="Subir cambios a GitHub (gif de cohete en Viaje a la Luna, de Georges Méliès)">
+                        </li>
+                        <li>
+                            <img src="static/images/GitHub.gif" alt="GitHub (gif de la luna en Viaje a la Luna cuando impacta el cohete)">
+                        </li>
+                        <li>
+                            <img src="static/images/pagina-web-resultado.gif" alt="Resultado en GitHub (ya en la luna, en Viaje a la Luna, de Georges Méliès)">
+                        </li>
+                    </div>
+                </div>
+            </section>
+
+            <section class="aligncenter">
+                <div class="wrap size-70">
+                    <h2><a href="https://pages.github.com/">pages.github.com</a></h2>
+                    <img src="static/images/github-pages.jpg" alt="Página de GitHub Pages">
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <section class="aligncenter">
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap-80">
+                    <h2>
+                        User site y Project sites
+                    </h2>
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <pre>https://user.github.io</pre>
+                            <img src="static/images/user-sites-melies.gif" alt="una sola página (git con un único Georges Méliès)">
+                        </div>
+                        <div class="column">
+                            <pre>https://user.github.io/repository</pre>
+                            <img src="static/images/project-sites-melies.gif" alt="una página por repositorio (gif con muchos Georges Méliès)">
+                        </div>
+                    </div>
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <section class="aligncenter">
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                    <h2>
+                        <a href="https://github.com/cristinafsanz/github-pages#origen">
+                            User site y Project sites
+                        </a>
+                    </h2>
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <img src="static/images/user-site.jpg" alt="Nombre del repositorio es username.github.io para User site">
+                        </div>
+                        <!-- .end .column -->
+                        <div class="column">
+                            <pre>git clone git@github.com/user/repository.git</pre>
+                            <pre>cd repository</pre>
+                            <pre>git add .</pre>
+                            <pre>git commit -m "Mensaje"</pre>
+                            <pre>git push origin master</pre>
+                        </div>
+                        <!-- .end .column -->
+                    </div>
+                    <!-- .end .grid -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <section class="aligncenter">
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                    <h2>
+                        <a href="https://github.com/cristinafsanz/github-pages#origen">
+                            Project sites
+                        </a>
+                    </h2>
+                    <img src="static/images/project-sites.jpg" alt="Ejemplo de repositorios de mi GitHub">
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <section class="aligncenter">
+                <!--.wrap = container (width: 80%) -->
+                <div class="wrap-80">
+                    <h2>
+                        <a href="https://github.com/cristinafsanz/github-pages#origen">
+                            Habilitar GitHub Pages
+                        </a>
+                    </h2>
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <img src="static/images/settings-tab.jpg" alt="Ir a pestaña Settings">
+                        </div>
+                        <div class="column">
+                            <img src="static/images/enable-gitHub-pages.jpg" alt="Habilitar GitHub Pages en master o en /docs en la pestaña Settings">
+                        </div>
+                    </div>
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <section class="aligncenter">
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap-80">
+                    <h2>
+                        <a href="https://github.com/cristinafsanz/melies-hugo#cambiar-dominio-de-github-pages">
+                            Dominio personalizado
+                        </a>
+                    </h2>
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <img src="static/images/settings-tab.jpg" alt="Ir a pestaña Settings">
+                            <img src="static/images/custom-domain.jpg" alt="Habilitar Dominio personalizado en Settings">
+                        </div>
+                        <div class="column">
+                            <img src="static/images/custom-domain-CNAME.jpg" alt="Crea fichero CNAME en la raíz">
+                        </div>
+                    </div>
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <section class="aligncenter">
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                    <h2>
+                        <a href="https://github.com/cristinafsanz/melies-origen">
+                            Ejemplo de uso: Presentación
+                        </a>
+                    </h2>
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <img src="static/images/github-melies-origen.jpg" alt="Repositorio en GitHub">
+                        </div>
+                        <div class="column">
+                            <img src="static/images/presentacion-melies-origen.jpg" alt="Resultado en el navegador">
+                        </div>
+                    </div>
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <section class="aligncenter">
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                    <h2>
+                        <a href="https://github.com/cristinafsanz/melies-hugo">
+                            Ejemplo de uso: Blog
+                        </a>
+                    </h2>
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <img src="static/images/github-melies-hugo.jpg" alt="Repositorio en GitHub">
+                        </div>
+                        <div class="column">
+                            <img src="static/images/blog-melies-hugo.jpg" alt="Resultado en el navegador">
+                        </div>
+                    </div>
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <section class="aligncenter">
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                    <h2>
+                        Hugo
+                    </h2>
+                    <img src="static/images/hugo.jpg" alt="Hugo, película homenaje a Méliès">
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+
+            <section class="aligncenter">
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap size-80">
+                    <h1 class="text-data">¡Gracias!</h1>
+                    <p class="text-end">
+                        <a class="visible-link" rel="external" href="https://twitter.com/cristinafsanz" title="Twitter">
+                            <svg class="fa-twitter">
+                                <use xlink:href="#fa-twitter"></use>
+                            </svg>
+                            <em>@cristinafsanz</em>
+                        </a>
+                    </p>
+                    <p class="text-end">
+                        <a class="visible-link" rel="external" href="https://github.com/cristinafsanz" title="GitHub">
+                            <svg class="fa-github">
+                                <use xlink:href="#fa-github"></use>
+                            </svg>
+                            <em>cristinafsanz</em>
+                        </a>
+                    </p>
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <section class="aligncenter">
+                <div class="wrap">
+                    <h2>Créditos</h2>
+                    <div class="grid vertical-align size-70">
+                        <div class="column">
+                            <ul class="description">
+                                <li class="credits">
+                                    <a class="visible-link" href="https://webslides.tv/">WebSlides</a> es una solución open source creada por <a class="visible-link" href="https://twitter.com/jlantunez">@jlantunez</a>, <a class="visible-link" href="https://twitter.com/Belelros">@Belelros</a> y <a class="visible-link" href="https://twitter.com/luissacristan">@luissacristan</a>.
+                                    Si quieres saber más, <a class="visible-link" href="https://twitter.com/webslides" title="@WebSlides">¡ponte en contacto!</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+        <!-- end article -->
+    </main>
+    <!-- end main -->
+
+    <!-- A global footer
+     <footer role="contentinfo">
+      <div class="wrap">
+        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
+      </div>
+    </footer>  -->
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+    <script>
+        window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+</body>
+
+</html>

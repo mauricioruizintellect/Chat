@@ -1,5 +1,4 @@
 <html>
-
 <div></div>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
@@ -61,6 +60,16 @@
 	} else {
 		initESW('https://service.force.com');
 	}
+</script>
+<script>
+window.addEventListener("message", receiveMessage, false);
+function receiveMessage(event) {
+    var payload = event.data;
+    if(payload && payload.type === "chasitor.sendMessage") {
+	console.log('payload');
+        embedded_svc.postMessage("chasitor.sendMessage", payload.message);
+    }
+};
 </script>
 
 </html>

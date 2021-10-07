@@ -51,6 +51,15 @@ HTML
 			}
 		);
 	};
+	window.addEventListener("message", receiveMessage, false);
+	function receiveMessage(event) {
+	    var payload = event.data;
+		console.log('payload 1 '+payload);
+	    if(payload && payload.type === "chasitor.sendMessage") {
+		console.log('payload 2 '+payload);
+		embedded_svc.postMessage("chasitor.sendMessage", payload.message);
+	    }
+	};
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
@@ -63,16 +72,4 @@ HTML
 		initESW('https://service.force.com');
 	}
 </script>
-<script>
-window.addEventListener("message", receiveMessage, false);
-function receiveMessage(event) {
-    var payload = event.data;
-	console.log('payload 1 '+payload);
-    if(payload && payload.type === "chasitor.sendMessage") {
-	console.log('payload 2 '+payload);
-        embedded_svc.postMessage("chasitor.sendMessage", payload.message);
-    }
-};
-</script>
-
 </html>

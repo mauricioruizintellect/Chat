@@ -70,11 +70,6 @@ HTML
 		);
 	};
 	
-	
-	embedded_svc.addEventHandler("onChasitorMessage", function(data) {
-	    console.log("onChasitorMessage event was fired.  liveAgentSessionKey was " + data.liveAgentSessionKey);
-	});
-
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
 		s.setAttribute('src', 'https://coppelmx--devchat.my.salesforce.com/embeddedservice/5.0/esw.min.js');
